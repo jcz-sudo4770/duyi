@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1.有兼容性 */
+      .box {
+        background-color: aqua;
+        height: 100px;
+        line-height: 25px;
+        overflow: hidden;
+        display: -webkit-box;
+        /* 方向 */
+        -webkit-box-orient: vertical;
+        /* 设置在第几行添加省略号 */
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+        word-break: break-all;
+      }
+    </style>
+    <style>
+      .box1 {
+        height: 100px;
+        line-height: 25px;
+        overflow: hidden;
+        border: 1px solid #f60;
+        position: relative;
+        word-break: break-all;
+      }
+      /* 定位可能会导致文字阶段 */
+      /* .more {      
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 1;
+        background-color: #fff;
+      } */
+      .more {
+        float: right;
+      }
+      .box1::before {
+        height: 75px;
+        content: "";
+        display: block;
+      }
+      .text-content {
+        /* 内容元素设置负margin */
+        margin-top: -75px;
+      }
+    </style>
+  </head>
+  <body>
+    <h5>多行文本溢出隐藏</h5>
+    <!-- <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At modi veniam
+      ipsa fugiat facere quibusdam, expedita obcaecati esse optio dignissimos
+      sapiente incidunt id officiis aliquid eius vitae molestias quos neque.
+      Tenetur accusamus similique porro autem fugit numquam minima aliquam,
+      dolores veritatis alias quidem possimus soluta. Quae, cum magni. Quaerat
+      impedit quo officiis inventore, quam culpa cum reprehenderit? Hic, minus
+      blanditiis. Eos sequi saepe voluptatem, rerum debitis totam adipisci quia
+      vitae culpa at quos consequatur ad fuga ut neque voluptatum veniam
+      architecto ratione reiciendis quibusdam sunt natus? Ad commodi quaerat
+      corrupti. Aperiam autem maiores recusandae adipisci vel placeat aut nobis
+      atque deserunt ullam corporis veniam quam nisi sint hic, voluptate
+      laborum, voluptates nam odio eos perferendis! Neque molestias blanditiis
+      atque hic. Inventore quaerat ipsum similique cumque earum, laudantium
+      corrupti saepe a excepturi praesentium possimus voluptate consequuntur
+      quae suscipit explicabo quas sit, nesciunt maxime temporibus voluptates.
+      Rerum nihil aliquid iusto voluptas vel. Culpa fugiat aspernatur illum
+      totam commodi, cum exercitationem quis ea? Consequuntur atque dignissimos
+      tempora temporibus veniam blanditiis unde id, eius vitae in voluptatibus
+      cum placeat ex velit impedit est ea. Quam harum, illo cum explicabo,
+      obcaecati iure vitae minima accusamus temporibus illum nesciunt amet alias
+      veniam recusandae expedita perspiciatis! Impedit architecto quas enim
+      magni rem nostrum veritatis exercitationem, laborum dicta? Quo vel qui,
+      esse numquam eveniet expedita. Praesentium laborum eaque, magni ducimus
+      minima ex quisquam nesciunt veritatis. Dicta ullam sed commodi molestias,
+      consectetur vero aliquid. Similique aut blanditiis possimus doloribus!
+    </div> -->
+    <div class="box1">
+      <div class="more">...</div>
+      <div class="text-content">
+        uni-app 是一个开放式跨端跨框架解决方案，通过 uni-app
+        能够有效提升开发效率，并可以打破运行平台的限制降低维护成本。
+        支持常用开发框架。使用小程序的原生代码编辑非常复杂，而 uni-app
+        则支持使用完整的Vue框架来进行开发，不需要转换开发思维、不需要更改开发习惯。
+        是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码，可发布到
+        iOS、Android、Web（响应式）、以及各种小程序平台。 uni-app
+        是一个开放式跨端跨框架解决方案，通过 uni-app
+        能够有效提升开发效率，并可以打破运行平台的限制降低维护成本。
+        支持常用开发框架。使用小程序的原生代码编辑非常复杂，而 uni-app
+        则支持使用完整的Vue框架来进行开发，不需要转换开发思维、不需要更改开发习惯。
+        是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码，可发布到
+        iOS、Android、Web（响应式）、以及各种小程序平台。
+      </div>
+    </div>
+  </body>
+</html>

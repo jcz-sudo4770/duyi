@@ -1,0 +1,42 @@
+name: Generate Changelog
+
+on:
+  push:
+    tags:
+      - '*'  # 当有新的 tag 被推送到仓库时触发此工作流
+
+jobs:
+  generate-changelog:
+    runs-on: ubuntu-latest  # 使用 Ubuntu 最新版作为运行环境
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整的提交历史，方便生成准确的变更日志
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'  # 可根据项目需求调整 Node.js 版本
+
+      - name: Install dependencies
+        run: npm install  # 安装项目依赖，包含 conventional-changelog-cli
+
+      - name: Generate Changelog
+        run: npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0
+        # -p conventionalcommits：指定使用 Conventional Commits 规范
+        # -i CHANGELOG.md：将生成的变更日志写入 CHANGELOG.md 文件
+        # -s：只更新文件，不输出到控制台
+        # -r 0：生成所有版本的变更日志
+
+      - name: Commit and push Changelog
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add CHANGELOG.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update CHANGELOG"
+            git push
+          fi
