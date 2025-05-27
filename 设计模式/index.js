@@ -1,0 +1,1 @@
+console.log("设计模式study")
