@@ -4,7 +4,8 @@ on:
   push:
     tags:
       - '*'  # 当有新的 tag 被推送到仓库时触发此工作流
-
+permissions:
+  contents: write # 授予写入仓库内容的权限
 jobs:
   generate-changelog:
     runs-on: ubuntu-latest  # 使用 Ubuntu 最新版作为运行环境
@@ -30,6 +31,8 @@ jobs:
         # -r 0：生成所有版本的变更日志
 
       - name: Commit and push Changelog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
