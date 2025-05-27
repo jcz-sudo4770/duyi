@@ -6,7 +6,7 @@ on:
       - '*'  # 当有新的 tag 被推送到仓库时触发此工作流
 
 jobs:
-  生成changelog:
+  generate-changelog:
     runs-on: ubuntu-latest  # 使用 Ubuntu 最新版作为运行环境
     steps:
       - name: Checkout code
