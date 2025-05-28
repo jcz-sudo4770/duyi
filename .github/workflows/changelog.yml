@@ -43,6 +43,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to CHANGELOG.md"
           else
+            git pull origin master
             git commit -m "chore: update CHANGELOG"
             git push https://x-access-token:${GITHUB_TOKEN}@github.com/jcz-sudo4770/duyi.git HEAD:master
           fi
