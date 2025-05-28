@@ -1,3 +1,4 @@
+## [1.0.0](https://github.com/jcz-sudo4770/duyi/compare/v0.0.9...v1.0.0) (2025-05-28)
 ## [1.0.0](https://github.com/jcz-sudo4770/duyi/compare/v0.0.8...v1.0.0) (2025-05-28)
 ## [1.0.0](https://github.com/jcz-sudo4770/duyi/compare/v0.0.7...v1.0.0) (2025-05-27)
 ## [0.0.7](https://github.com/jcz-sudo4770/duyi/compare/v0.0.6...v0.0.7) (2025-05-27)
