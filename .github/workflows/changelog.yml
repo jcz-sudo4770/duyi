@@ -4,7 +4,8 @@ on:
   push:
     tags:
       - '*'
-
+permissions:
+  contents: write  # Grant write permission to the repository contents
 jobs:
   generate-changelog:
     runs-on: ubuntu-latest
