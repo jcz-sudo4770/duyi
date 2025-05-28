@@ -3,36 +3,27 @@ name: Generate Changelog
 on:
   push:
     tags:
-      - '*'  # 当有新的 tag 被推送到仓库时触发此工作流
-permissions:
-  contents: write # 授予写入仓库内容的权限
+      - '*'
+
 jobs:
   generate-changelog:
-    runs-on: ubuntu-latest  # 使用 Ubuntu 最新版作为运行环境
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 获取完整的提交历史，方便生成准确的变更日志
-          ref: master  # 明确指定检出 master 分支
-      - name: Fetch all tags and branches
-        run: |
-          git fetch --tags
-          git fetch --all
+          fetch-depth: 0
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'  # 可根据项目需求调整 Node.js 版本
+          node-version: '18'
 
       - name: Install dependencies
-        run: npm install  # 安装项目依赖，包含 conventional-changelog-cli
+        run: npm install
 
       - name: Generate Changelog
-        run: npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 1 -c conventional-changelog.config.js
-        # -p conventionalcommits：指定使用 Conventional Commits 规范
-        # -i CHANGELOG.md：将生成的变更日志写入 CHANGELOG.md 文件
-        # -s：只更新文件，不输出到控制台
-        # -r 1：生成所有版本的变更日志
+        run: npm run changelog
 
       - name: Commit and push Changelog
         env:
@@ -42,8 +33,8 @@ jobs:
           git config --local user.name "GitHub Action"
           git add CHANGELOG.md
           if git diff --staged --quiet; then
-            echo "❗无差异！！！"
+            echo "No changes to CHANGELOG.md"
           else
-            git commit -m "chore: 更新CHANGELOG"
-            git push origin master
+            git commit -m "chore: update CHANGELOG"
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/your-repo/your-repo.git
           fi
