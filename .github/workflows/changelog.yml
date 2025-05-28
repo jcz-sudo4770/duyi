@@ -24,11 +24,11 @@ jobs:
         run: npm install  # 安装项目依赖，包含 conventional-changelog-cli
 
       - name: Generate Changelog
-        run: npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0
+        run: npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 1
         # -p conventionalcommits：指定使用 Conventional Commits 规范
         # -i CHANGELOG.md：将生成的变更日志写入 CHANGELOG.md 文件
         # -s：只更新文件，不输出到控制台
-        # -r 0：生成所有版本的变更日志
+        # -r 1：生成所有版本的变更日志
 
       - name: Commit and push Changelog
         env:
@@ -38,7 +38,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add CHANGELOG.md
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "❗无差异！！！"
           else
             git commit -m "chore: 更新CHANGELOG"
             git push origin master
