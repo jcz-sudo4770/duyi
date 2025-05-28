@@ -15,6 +15,10 @@ jobs:
         with:
           fetch-depth: 0  # 获取完整的提交历史，方便生成准确的变更日志
           ref: master  # 明确指定检出 master 分支
+      - name: Fetch all tags and branches
+        run: |
+          git fetch --tags
+          git fetch --all
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -24,7 +28,7 @@ jobs:
         run: npm install  # 安装项目依赖，包含 conventional-changelog-cli
 
       - name: Generate Changelog
-        run: npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 1
+        run: npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 1 -c conventional-changelog.config.js
         # -p conventionalcommits：指定使用 Conventional Commits 规范
         # -i CHANGELOG.md：将生成的变更日志写入 CHANGELOG.md 文件
         # -s：只更新文件，不输出到控制台
