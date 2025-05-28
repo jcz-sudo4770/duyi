@@ -24,7 +24,14 @@ jobs:
         run: npm install
 
       - name: Generate Changelog
-        run: npm run changelog
+        run: |
+          echo "Starting to generate changelog..."
+          npm run changelog
+          if [ $? -ne 0 ]; then
+            echo "Failed to generate changelog."
+            exit 1
+          fi
+          echo "Changelog generated successfully."
 
       - name: Commit and push Changelog
         env:
