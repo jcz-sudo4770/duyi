@@ -36,5 +36,5 @@ jobs:
             echo "No changes to CHANGELOG.md"
           else
             git commit -m "chore: update CHANGELOG"
-            git push https://x-access-token:${GITHUB_TOKEN}@github.com/duyi/duyi.git
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/duyi/duyi.git HEAD:master
           fi
