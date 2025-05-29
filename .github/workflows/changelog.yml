@@ -3,35 +3,42 @@ name: Generate Changelog
 on:
   push:
     tags:
-      - '*'
+      - '*'  # 当有新的 tag 被推送到仓库时触发此工作流
 permissions:
-  contents: write  # Grant write permission to the repository contents
+  contents: write # 授予写入仓库内容的权限
 jobs:
   generate-changelog:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 使用 Ubuntu 最新版作为运行环境
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-
+          fetch-depth: 0  # 获取完整的提交历史，方便生成准确的变更日志
+          ref: master  # 明确指定检出 master 分支
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '18'  # 可根据项目需求调整 Node.js 版本
 
       - name: Install dependencies
-        run: npm install
+        run: npm install  # 安装项目依赖，包含 conventional-changelog-cli
 
-      - name: Generate Changelog
+      - name: Get previous and current tags
+        id: tags
         run: |
-          echo "Starting to generate changelog..."
-          npm run changelog
-          if [ $? -ne 0 ]; then
-            echo "Failed to generate changelog."
-            exit 1
+          CURRENT_TAG=${{ github.ref_name }}
+          PREVIOUS_TAG=$(git tag --sort=-creatordate | grep -v "$CURRENT_TAG" | head -n 1)
+          if [ -z "$PREVIOUS_TAG" ]; then
+            PREVIOUS_TAG=$(git rev-list --max-parents=0 HEAD)
           fi
-          echo "Changelog generated successfully."
+          echo "current_tag=$CURRENT_TAG" >> $GITHUB_OUTPUT
+          echo "previous_tag=$PREVIOUS_TAG" >> $GITHUB_OUTPUT
+
+      - name: Generate Changelog between two tags
+        run: |
+          npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 --from ${{ steps.tags.outputs.previous_tag }} --to ${{ steps.tags.outputs.current_tag }}
+        # --from：指定起始标签或提交哈希
+        # --to：指定结束标签或提交哈希
 
       - name: Commit and push Changelog
         env:
@@ -41,9 +48,8 @@ jobs:
           git config --local user.name "GitHub Action"
           git add CHANGELOG.md
           if git diff --staged --quiet; then
-            echo "No changes to CHANGELOG.md"
+            echo "版本无差异！！！"
           else
-            git pull origin master
-            git commit -m "chore: update CHANGELOG"
-            git push https://x-access-token:${GITHUB_TOKEN}@github.com/jcz-sudo4770/duyi.git HEAD:master
+            git commit -m "chore: 更新CHANGELOG"
+            git push origin master
           fi
