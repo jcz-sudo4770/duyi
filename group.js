@@ -33,3 +33,13 @@ console.log(group(people, (item) => (item.age > 30 ? ">30" : "<=30")));
 
 const str = "1111";
 console.log(typeof str);
+
+var arr = [1,2,3,4,4,3,2]
+function findSingleElement(arr) {
+  let result = 0;
+  for (let num of arr) {
+    // 使用异或运算找出孤立元素
+    result ^= num; 
+  }
+  return result;
+}
