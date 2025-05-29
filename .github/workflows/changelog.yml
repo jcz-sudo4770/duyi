@@ -36,7 +36,7 @@ jobs:
 
       - name: Generate Changelog between two tags
         run: |
-          npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 --from ${{ steps.tags.outputs.previous_tag }} --to ${{ steps.tags.outputs.current_tag }}
+          npx conventional-changelog -p ./changelog.config.js -i CHANGELOG.md -s -r 0 --from ${{ steps.tags.outputs.previous_tag }} --to ${{ steps.tags.outputs.current_tag }}
         # --from：指定起始标签或提交哈希
         # --to：指定结束标签或提交哈希
 
