@@ -23,6 +23,13 @@ jobs:
       - name: Install dependencies
         run: npm install  # 安装项目依赖，包含 conventional-changelog-cli
 
+      - name: update version
+        run: |
+          echo "输出所有版本号（Git 标签）:"
+          git tag -l
+          echo "执行 npm version 命令"
+          npm version
+
       - name: Get previous and current tags
         id: tags
         run: |
