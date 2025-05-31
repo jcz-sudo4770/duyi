@@ -1,5 +1,7 @@
-## <small>0.0.2-0 (2025-05-31)</small>
+## <small>0.0.2-alpha.0 (2025-05-31)</small>
 
+* chore: 更新CHANGELOG ([31cc7b4](https://github.com/jcz-sudo4770/duyi/commit/31cc7b4))
+* chore: 更新版本号至0.0.2-alpha.0 ([8abe82e](https://github.com/jcz-sudo4770/duyi/commit/8abe82e))
 
 
 
