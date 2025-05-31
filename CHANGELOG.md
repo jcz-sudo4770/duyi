@@ -1,10 +1,3 @@
-## <small>0.0.2-11 (2025-05-31)</small>
-
-* feat: 添加MyPromise基础实现 ([33a9d24](https://github.com/jcz-sudo4770/duyi/commit/33a9d24))
-* chore: 更新CHANGELOG ([8093239](https://github.com/jcz-sudo4770/duyi/commit/8093239))
-
-
-
 ## <small>0.0.2-10 (2025-05-31)</small>
 
 * chore: 更新CHANGELOG ([c99ab85](https://github.com/jcz-sudo4770/duyi/commit/c99ab85))
