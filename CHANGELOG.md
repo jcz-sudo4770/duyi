@@ -1,24 +1,70 @@
-## [0.0.2-0](https://github.com/jcz-sudo4770/duyi/compare/v0.0.2-2...v0.0.2-0) (2025-05-29)
-## [0.0.2-2](https://github.com/jcz-sudo4770/duyi/compare/v0.0.2-1...v0.0.2-2) (2025-05-29)
+## <small>0.0.2-0 (2025-05-29)</small>
 
-### Features
+* build(changelog): 更新 changelog 配置和依赖 ([31f0289](https://github.com/jcz-sudo4770/duyi/commit/31f0289))
+* chore: 更新CHANGELOG ([8e85b45](https://github.com/jcz-sudo4770/duyi/commit/8e85b45))
 
-* findSingleElement函数实现 ([0485779](https://github.com/jcz-sudo4770/duyi/commit/048577988a0e30ff48876ef09c334021cffaa830))
-## [0.0.2-1](https://github.com/jcz-sudo4770/duyi/compare/v0.0.2-0...v0.0.2-1) (2025-05-29)
-## [0.0.2-0](https://github.com/jcz-sudo4770/duyi/compare/v0.1.9...v0.0.2-0) (2025-05-29)
-## [0.1.9](https://github.com/jcz-sudo4770/duyi/compare/v0.1.8...v0.1.9) (2025-05-28)
-## [0.1.8](https://github.com/jcz-sudo4770/duyi/compare/da2db998a32f5d83cc8d51a267597984611334ac...v0.1.8) (2025-05-28)
 
-### Features
 
-* test文件提交 ([276d641](https://github.com/jcz-sudo4770/duyi/commit/276d6411398e0e5d043987de0dd27edd2a3c31b8))
-* 基线代码提交 ([da2db99](https://github.com/jcz-sudo4770/duyi/commit/da2db998a32f5d83cc8d51a267597984611334ac))
+## <small>0.0.2-2 (2025-05-29)</small>
 
-### Bug Fixes
+* feat: findSingleElement函数实现 ([0485779](https://github.com/jcz-sudo4770/duyi/commit/0485779))
+* chore: 更新CHANGELOG ([75d3cd2](https://github.com/jcz-sudo4770/duyi/commit/75d3cd2))
 
-* sum函数开发 ([2c78d0b](https://github.com/jcz-sudo4770/duyi/commit/2c78d0b5fb3f27cf922a8371fbf1f1d83c48e596))
-* yml文件修改 ([1c8512a](https://github.com/jcz-sudo4770/duyi/commit/1c8512a024e922653aa7818595c3d9dd088ade90))
-* yml文件修改 ([2d47404](https://github.com/jcz-sudo4770/duyi/commit/2d474044ec96dba262d762465249a717b04755f3))
-* yml文件修改 ([dd977a3](https://github.com/jcz-sudo4770/duyi/commit/dd977a3c677efd14c6cb00edb36838d1074049d9))
-* yml文件修改 ([d79ace6](https://github.com/jcz-sudo4770/duyi/commit/d79ace69844a44ebbea8064f181000b31403523b))
-* yml文件修改 ([55bdab3](https://github.com/jcz-sudo4770/duyi/commit/55bdab30733dad8ea1ab781cde4a4eeaa8878e5a))
+
+
+## <small>0.0.2-1 (2025-05-29)</small>
+
+* ci(changelog): 优化变更日志生成工作流 ([1259749](https://github.com/jcz-sudo4770/duyi/commit/1259749))
+* chore: update CHANGELOG ([9ef5b84](https://github.com/jcz-sudo4770/duyi/commit/9ef5b84))
+
+
+
+## <small>0.0.2-0 (2025-05-29)</small>
+
+* chore: update CHANGELOG ([802b8ed](https://github.com/jcz-sudo4770/duyi/commit/802b8ed))
+* chore: 将版本号从0.1.10-0降级至0.0.1 ([e99215f](https://github.com/jcz-sudo4770/duyi/commit/e99215f))
+* chore: 更新项目版本号至0.0.2-0 ([df3e8f1](https://github.com/jcz-sudo4770/duyi/commit/df3e8f1))
+* ci: 添加 commitlint 和 husky 配置 ([f8b90d9](https://github.com/jcz-sudo4770/duyi/commit/f8b90d9))
+* 0.1.10-0 ([d60df8b](https://github.com/jcz-sudo4770/duyi/commit/d60df8b))
+
+
+
+## <small>0.1.9 (2025-05-28)</small>
+
+* docs: 修改package配置 ([29103dc](https://github.com/jcz-sudo4770/duyi/commit/29103dc))
+* docs: 修改package配置 ([7b64e68](https://github.com/jcz-sudo4770/duyi/commit/7b64e68))
+
+
+
+## <small>0.1.8 (2025-05-28)</small>
+
+* docs: yml文件修i该 ([77584fb](https://github.com/jcz-sudo4770/duyi/commit/77584fb))
+* docs: 修改yml配置 ([0177a0e](https://github.com/jcz-sudo4770/duyi/commit/0177a0e))
+* docs: 修改yml配置 ([0c7d262](https://github.com/jcz-sudo4770/duyi/commit/0c7d262))
+* docs: 修改版本号 ([fa22a12](https://github.com/jcz-sudo4770/duyi/commit/fa22a12))
+* docs: 修改配置 ([06c6b12](https://github.com/jcz-sudo4770/duyi/commit/06c6b12))
+* docs: 更新yml文档 ([f530e7e](https://github.com/jcz-sudo4770/duyi/commit/f530e7e))
+* docs: 版本号更新 ([55f63e9](https://github.com/jcz-sudo4770/duyi/commit/55f63e9))
+* chore: update CHANGELOG ([1ec8817](https://github.com/jcz-sudo4770/duyi/commit/1ec8817))
+* chore: update CHANGELOG ([8df1f9d](https://github.com/jcz-sudo4770/duyi/commit/8df1f9d))
+* chore: 更新CHANGELOG ([36b5e78](https://github.com/jcz-sudo4770/duyi/commit/36b5e78))
+* chore: 更新CHANGELOG ([0877de4](https://github.com/jcz-sudo4770/duyi/commit/0877de4))
+* chore: 更新CHANGELOG ([ef4948a](https://github.com/jcz-sudo4770/duyi/commit/ef4948a))
+* fix: sum函数开发 ([2c78d0b](https://github.com/jcz-sudo4770/duyi/commit/2c78d0b))
+* fix: yml文件修改 ([1c8512a](https://github.com/jcz-sudo4770/duyi/commit/1c8512a))
+* fix: yml文件修改 ([2d47404](https://github.com/jcz-sudo4770/duyi/commit/2d47404))
+* fix: yml文件修改 ([dd977a3](https://github.com/jcz-sudo4770/duyi/commit/dd977a3))
+* fix: yml文件修改 ([d79ace6](https://github.com/jcz-sudo4770/duyi/commit/d79ace6))
+* fix: yml文件修改 ([55bdab3](https://github.com/jcz-sudo4770/duyi/commit/55bdab3))
+* feat: test文件提交 ([276d641](https://github.com/jcz-sudo4770/duyi/commit/276d641))
+* feat: 基线代码提交 ([da2db99](https://github.com/jcz-sudo4770/duyi/commit/da2db99))
+* change: 工作流 ([b4dc63d](https://github.com/jcz-sudo4770/duyi/commit/b4dc63d))
+* change: 工作流 ([ec9c7a4](https://github.com/jcz-sudo4770/duyi/commit/ec9c7a4))
+* change: 工作流变化 ([1b30e2c](https://github.com/jcz-sudo4770/duyi/commit/1b30e2c))
+* change: 工作流文件 ([2e6f8b6](https://github.com/jcz-sudo4770/duyi/commit/2e6f8b6))
+* change: 调整yml文件，生成tag之间的差异 ([1767900](https://github.com/jcz-sudo4770/duyi/commit/1767900))
+* 修改工作流文件 ([25a7dca](https://github.com/jcz-sudo4770/duyi/commit/25a7dca))
+* 设计模式 ([4e75194](https://github.com/jcz-sudo4770/duyi/commit/4e75194))
+
+
+
