@@ -1,3 +1,11 @@
+## <small>0.0.2-10 (2025-05-31)</small>
+
+* chore: 更新CHANGELOG ([c99ab85](https://github.com/jcz-sudo4770/duyi/commit/c99ab85))
+* chore: 更新CHANGELOG ([eeb828c](https://github.com/jcz-sudo4770/duyi/commit/eeb828c))
+* ci(changelog): 优化版本号获取和更新流程 ([82ed3ee](https://github.com/jcz-sudo4770/duyi/commit/82ed3ee))
+
+
+
 ## <small>0.0.2-8 (2025-05-31)</small>
 
 * chore: 更新 package.json 中的版本号至 0.0.2-7 ([f70b787](https://github.com/jcz-sudo4770/duyi/commit/f70b787))
