@@ -1,9 +1,17 @@
-## <small>0.0.2-alpha.0 (2025-05-31)</small>
+## <small>0.0.2-7 (2025-05-31)</small>
 
-* ci(changelog): 在changelog工作流中添加版本检查步骤 ([2eee665](https://github.com/jcz-sudo4770/duyi/commit/2eee665))
+
+
+
+## <small>0.0.2-8 (2025-05-31)</small>
+
+* chore: 更新 package.json 中的版本号至 0.0.2-7 ([f70b787](https://github.com/jcz-sudo4770/duyi/commit/f70b787))
+* chore: 更新CHANGELOG ([9e5e83b](https://github.com/jcz-sudo4770/duyi/commit/9e5e83b))
 * chore: 更新CHANGELOG ([b34ee81](https://github.com/jcz-sudo4770/duyi/commit/b34ee81))
 * chore: 更新CHANGELOG ([31cc7b4](https://github.com/jcz-sudo4770/duyi/commit/31cc7b4))
 * chore: 更新版本号至0.0.2-alpha.0 ([8abe82e](https://github.com/jcz-sudo4770/duyi/commit/8abe82e))
+* feat: 添加斐波那契数列计算函数 ([5d958b8](https://github.com/jcz-sudo4770/duyi/commit/5d958b8))
+* ci(changelog): 在changelog工作流中添加版本检查步骤 ([2eee665](https://github.com/jcz-sudo4770/duyi/commit/2eee665))
 
 
 
