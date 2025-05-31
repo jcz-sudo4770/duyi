@@ -6,3 +6,11 @@ class MyPromise {
     }
 
 }
+
+MyPromise.prototype.then = function (onFulfilled, onRejected) {
+    if (this.status === 'fulfilled') { // 如果状态为fulfilled，执行onFulfilled回调函数
+        onFulfilled(this.value)
+    } else if (this.status === 'rejected') { // 如果状态为rejected，执行onRejected回调          
+        onRejected(this.reason)
+    }
+}
