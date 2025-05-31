@@ -1,7 +1,15 @@
-## <small>0.0.2-0 (2025-05-29)</small>
+## <small>0.0.2-0 (2025-05-31)</small>
 
-* build(changelog): 更新 changelog 配置和依赖 ([31f0289](https://github.com/jcz-sudo4770/duyi/commit/31f0289))
+
+
+
+## <small>0.0.2-5 (2025-05-31)</small>
+
+* ci(changelog): 启用提交信息 ([86b2622](https://github.com/jcz-sudo4770/duyi/commit/86b2622))
+* ci(changelog): 禁用自动提交CHANGELOG功能 ([05f1300](https://github.com/jcz-sudo4770/duyi/commit/05f1300))
+* chore: 更新CHANGELOG ([b0a7e21](https://github.com/jcz-sudo4770/duyi/commit/b0a7e21))
 * chore: 更新CHANGELOG ([8e85b45](https://github.com/jcz-sudo4770/duyi/commit/8e85b45))
+* build(changelog): 更新 changelog 配置和依赖 ([31f0289](https://github.com/jcz-sudo4770/duyi/commit/31f0289))
 
 
 
