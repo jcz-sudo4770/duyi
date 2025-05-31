@@ -40,16 +40,16 @@ jobs:
         # --from：指定起始标签或提交哈希
         # --to：指定结束标签或提交哈希
 
-      - name: Commit and push Changelog
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add CHANGELOG.md
-          if git diff --staged --quiet; then
-            echo "版本无差异！！！"
-          else
-            git commit -m "chore: 更新CHANGELOG"
-            git push origin master
-          fi
+      # - name: Commit and push Changelog
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add CHANGELOG.md
+      #     if git diff --staged --quiet; then
+      #       echo "版本无差异！！！"
+      #     else
+      #       git commit -m "chore: 更新CHANGELOG"
+      #       git push origin master
+      #     fi
