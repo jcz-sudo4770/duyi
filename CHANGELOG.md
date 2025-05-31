@@ -1,8 +1,3 @@
-## <small>0.0.2-7 (2025-05-31)</small>
-
-
-
-
 ## <small>0.0.2-8 (2025-05-31)</small>
 
 * chore: 更新 package.json 中的版本号至 0.0.2-7 ([f70b787](https://github.com/jcz-sudo4770/duyi/commit/f70b787))
