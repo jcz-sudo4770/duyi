@@ -61,7 +61,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add CHANGELOG.md
+          git add CHANGELOG.md package.json
           if git diff --staged --quiet; then
             echo "版本无差异！！！"
           else
