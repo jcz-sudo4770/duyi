@@ -19,3 +19,4 @@ MyPromise.prototype.catch = function (onRejected) { // 捕获错误的方法
         onRejected(this.reason)
     }
 }
+console.log("设计模式study")
