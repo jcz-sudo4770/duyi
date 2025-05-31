@@ -1,3 +1,15 @@
+## <small>0.0.2-15 (2025-05-31)</small>
+
+* ci(changelog): 更新工作流以包含package.json ([adbd6c5](https://github.com/jcz-sudo4770/duyi/commit/adbd6c5))
+* feat: 实现 MyPromise 的 then 方法 ([ce1f365](https://github.com/jcz-sudo4770/duyi/commit/ce1f365))
+* feat: 添加MyPromise基础实现 ([33a9d24](https://github.com/jcz-sudo4770/duyi/commit/33a9d24))
+* chore: 删除不再需要的conventional-changelog配置文件 ([a59cb8f](https://github.com/jcz-sudo4770/duyi/commit/a59cb8f))
+* chore: 更新CHANGELOG ([adfc659](https://github.com/jcz-sudo4770/duyi/commit/adfc659))
+* chore: 更新CHANGELOG ([38d8986](https://github.com/jcz-sudo4770/duyi/commit/38d8986))
+* chore: 更新CHANGELOG ([8093239](https://github.com/jcz-sudo4770/duyi/commit/8093239))
+
+
+
 ## <small>0.0.2-10 (2025-05-31)</small>
 
 * chore: 更新CHANGELOG ([c99ab85](https://github.com/jcz-sudo4770/duyi/commit/c99ab85))
