@@ -27,8 +27,16 @@ jobs:
         run: |
           echo "输出所有版本号（Git 标签）:"
           git tag -l
-          echo "执行 npm version 命令"
-          npm version
+      - name: Get latest git tag
+        id: latest_tag
+        run: |
+          LATEST_TAG=$(git tag --sort=-creatordate | head -n 1)
+          echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+
+      - name: Update package.json version
+        run: |
+          npm version ${{ steps.latest_tag.outputs.latest_tag }} --no-git-tag-version
+          # --no-git-tag-version 选项用于避免 npm 自动创建新的 git 标签
 
       - name: Get previous and current tags
         id: tags
