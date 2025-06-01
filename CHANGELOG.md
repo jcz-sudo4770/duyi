@@ -1,3 +1,17 @@
+## <small>0.0.2-18 (2025-06-01)</small>
+
+* docs(changelog): 更新 changelog 配置以支持中文分类和自定义排序 ([97a9b5a](https://github.com/jcz-sudo4770/duyi/commit/97a9b5a))
+* chore: 在myPromise.js中添加调试日志 ([ef54b4e](https://github.com/jcz-sudo4770/duyi/commit/ef54b4e))
+* chore: 更新CHANGELOG ([66b5078](https://github.com/jcz-sudo4770/duyi/commit/66b5078))
+* chore: 更新CHANGELOG ([c4b807c](https://github.com/jcz-sudo4770/duyi/commit/c4b807c))
+* chore: 更新CHANGELOG ([9975a05](https://github.com/jcz-sudo4770/duyi/commit/9975a05))
+* feat: 为MyPromise添加catch方法以捕获错误 ([1e11093](https://github.com/jcz-sudo4770/duyi/commit/1e11093))
+* feat: 添加demo.html文件用于文件上传功能 ([1c9bfa5](https://github.com/jcz-sudo4770/duyi/commit/1c9bfa5))
+* feat: 添加Promise实例创建和异步解析示例 ([13c7bdb](https://github.com/jcz-sudo4770/duyi/commit/13c7bdb))
+* feat(文件处理): 添加大文件分片上传功能 ([a88c736](https://github.com/jcz-sudo4770/duyi/commit/a88c736))
+
+
+
 ## <small>0.0.2-15 (2025-05-31)</small>
 
 * ci(changelog): 更新工作流以包含package.json ([adbd6c5](https://github.com/jcz-sudo4770/duyi/commit/adbd6c5))
